@@ -46,7 +46,7 @@ public class Account {
     }
 
     public void withdrawl(double withdrawlAmount){
-        if(balance - withdrawlAmount <= 0){
+        if(balance - withdrawlAmount < 0){
             System.out.println("Only " + this.balance + " available. Withdrawl not processed");
         } else {
             this.balance -= withdrawlAmount;
